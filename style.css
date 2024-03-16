@@ -6,13 +6,11 @@
 
 .container{
     background-color: #afcdd7;
-    min-height: 100vh;
-    border: 15px solid #001524;
+    /* min-height: 100vh; */
+    max-width: 100vw;
+    border: 1px solid #001524;
 }
-.content{
-    max-width: 1300px;
-    margin: 0 auto;
-}
+
 .img-container{
     margin: 50px;
 }
@@ -61,7 +59,7 @@ h3{
     padding: 10px;
 }
 .watch-options ul{
-    list-style-type: none;
+    list-style-type: square;
 }
 h4{
     text-align: center;
@@ -81,10 +79,16 @@ h4{
     margin-bottom: 10px;
     color: #484041;
 }
-.links li:hover{
-    color: chocolate;
-}
+
 .clr{
     color: teal;
-    text-decoration: underline;
+    font-weight: bold;
+    /* text-decoration: underline; */
+    cursor: pointer;
+    transition: cubic-bezier(0.77, 0, 0.175, 1) 800ms;
+
+}
+
+.links li .clr:hover{
+    color: rgb(4, 10, 12);
 }
